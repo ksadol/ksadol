@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>첫 번째 HTML 문서</title>
-</head>
-<body>
-    <h1>안녕하세요!</h1>
-    <p>이것은 첫 번째 HTML 웹 페이지 예제입니다.</p>
-    <ul>
-        <li>사과</li>
-        <li>바나나</li>
-        <li>딸기</li>
-    </ul>
-</body>
+<html>
+
+<body>Hello, world!</body>
+
 </html>
