@@ -1,3 +1,175 @@
-<html>
-<body>태우 수빈이 화이팅</body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 웹사이트</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 70vh;
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 10px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <h2>LOGO</h2>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#services">서비스</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 배너 -->
+    <section class="hero">
+        <div>
+            <h1>환영합니다</h1>
+            <p>여기에 사이트 소개 문구를 입력하세요.</p>
+        </div>
+    </section>
+
+    <!-- 소개 -->
+    <section id="about" class="section">
+        <h2>소개</h2>
+        <p>
+            이곳에 회사 또는 프로젝트 소개 내용을 작성하세요.
+        </p>
+    </section>
+
+    <!-- 서비스 -->
+    <section id="services" class="section">
+        <h2>서비스</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>서비스 1</h3>
+                <p>서비스 설명</p>
+            </div>
+
+            <div class="card">
+                <h3>서비스 2</h3>
+                <p>서비스 설명</p>
+            </div>
+
+            <div class="card">
+                <h3>서비스 3</h3>
+                <p>서비스 설명</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 -->
+    <section id="contact" class="section">
+        <h2>문의하기</h2>
+
+        <form>
+            <input type="text" placeholder="이름" style="width:100%;padding:10px;margin:10px 0;">
+            <input type="email" placeholder="이메일" style="width:100%;padding:10px;margin:10px 0;">
+            <textarea placeholder="문의 내용" style="width:100%;padding:10px;height:150px;"></textarea>
+            <button type="submit" style="margin-top:10px;padding:10px 20px;">
+                보내기
+            </button>
+        </form>
+    </section>
+
+    <!-- 푸터 -->
+    <footer>
+        <p>© 2026 내 웹사이트. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
